@@ -21,48 +21,54 @@
       </div>
     </div>
 
-    <div class="row mt-3">
+    <div class="row mt-4">
       <div class="col-6 offset-3 d-flex justify-content-around">
         <div class="card mx-2">
           <img class="card-img-top img-fluid candy-img" src="assets/img/snickers.png" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">A1</h4>
-            <p>$0.50</p>
-            <button class="btn btn-primary" id="a1" onclick="app.controllers.vendrController.buy('a1')">Select</button>
+            <h5 class="card-title text-center">A1</h5>
+            <p class="text-center"> $0.50</p>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-sm btn-primary" id="a1" onclick="app.controllers.vendrController.buy('a1')">Select</button>
+            </div>
           </div>
         </div>
         <div class="card mx-2">
           <img class="card-img-top img-fluid candy-img" src="assets/img/twix.jpg" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">A2</h4>
-            <p>$0.75</p>
-            <button class="btn btn-sm btn-primary" id="a2" onclick="app.controllers.vendrController.buy('a2')">Select</button>
+            <h5 class="card-title text-center">A2</h5>
+            <p class="text-center"> $0.75</p>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-sm btn-primary" id="a2" onclick="app.controllers.vendrController.buy('a2')">Select</button>
+            </div>
           </div>
         </div>
         <div class="card mx-2">
           <img class="card-img-top img-fluid candy-img" src="assets/img/oreo.jpg" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">A3</h4>
-            <p>$1.00</p>
-            <button class="btn btn-sm btn-primary" id="a3" onclick="app.controllers.vendrController.buy('a3')">Select</button>
+            <h5 class="card-title text-center">A3</h5>
+            <p class="text-center"> $1.00</p>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-sm btn-primary" id="a3" onclick="app.controllers.vendrController.buy('a3')">Select</button>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row mt-5">
       <div class="col d-flex justify-content-center">
         <button class="btn btn-sm btn-success mr-5" id="amountPaid" onclick="app.controllers.vendrController.paidQuarter()">Pay
           $0.25</button>
-        <h4 class="text-white">Amount paid $ <span id="paidDisplay">___</span></h4>
+        <h4 class="text-white">Balance $<span id="paidDisplay">___</span></h4>
       </div>
     </div>
 
     <!-- selected/dispensed candy -->
     <div class="row mt-3">
-      <div class="col d-flex justify-content-center">
-        <img class="card-img-top img-fluid dispensed-candy" id="dispensedCandy" src="" alt="Card image cap">
+      <div class="col d-flex justify-content-center mt-4">
+        <img class="card-img-top img-fluid dispensed-candy" id="dispensedCandy" src="./assets/img/black-box.jpg" alt="Card image cap">
       </div>
     </div>
 

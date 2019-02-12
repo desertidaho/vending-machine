@@ -12,7 +12,9 @@ let vendrService = new VendrService()
 function draw(itemImage) {
   let v = vendrService.Balance
   document.getElementById('paidDisplay').innerText = v.toFixed(2)
-  document.getElementById('dispensedCandy').setAttribute("src", itemImage)
+  if (itemImage) {
+    document.getElementById('dispensedCandy').setAttribute("src", itemImage)
+  }
 }
 
 
