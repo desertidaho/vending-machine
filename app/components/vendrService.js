@@ -1,9 +1,9 @@
 import VendingMachine from '../models/vendingMachine.js'
+import Snack from '../models/snack.js';
 
 //Private
 //3
-let vm = new VendingMachine()
-
+let _vendr = new VendingMachine()
 
 
 
@@ -25,5 +25,13 @@ export default class VendrService {
     _vendr.balance += .25
   }
 
+  buy(itemNum) {
+    let targetSnack = _vendr.snacks[itemNum]
+    if (targetSnack.price <= _vendr.balance) {
+      _vendr.balance -= targetSnack.price
+      return targetSnack.image
+    }
+
+  }
 
 }
