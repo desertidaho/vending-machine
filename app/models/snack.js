@@ -5,4 +5,5 @@ export default class Snack {
     this.price = price
     this.image = image
   }
+
 }

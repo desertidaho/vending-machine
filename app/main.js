@@ -1,7 +1,6 @@
 //1
 import VendrController from "./components/vendrController.js"
 
-
 //6
 class App {
   constructor() {
@@ -11,8 +10,6 @@ class App {
     }
   }
 }
-
-
 
 // @ts-ignore
 window.app = new App()

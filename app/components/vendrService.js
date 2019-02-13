@@ -1,17 +1,11 @@
 import VendingMachine from '../models/vendingMachine.js'
 import Snack from '../models/snack.js';
 
-//Private
 //3
 let _vendr = new VendingMachine()
 
-
-
-
 //Services maintain data and manipulation of data here
 //Public
-
-
 export default class VendrService {
   constructor() {
     //5
@@ -31,7 +25,6 @@ export default class VendrService {
       _vendr.balance -= targetSnack.price
       return targetSnack.image
     }
-
   }
 
 }
