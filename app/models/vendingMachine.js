@@ -9,5 +9,4 @@ export default class VendingMachine {
     }
     this.balance = 0
   }
-
 }

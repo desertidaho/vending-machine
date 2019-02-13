@@ -1,5 +1,4 @@
 import VendingMachine from '../models/vendingMachine.js'
-import Snack from '../models/snack.js';
 
 //3
 let _vendr = new VendingMachine()

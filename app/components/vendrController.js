@@ -1,6 +1,5 @@
 //2
 import VendrService from "./vendrService.js"
-import Snack from "../models/snack.js";
 
 //4
 let vendrService = new VendrService()
