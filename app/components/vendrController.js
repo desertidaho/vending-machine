@@ -5,11 +5,15 @@ import VendrService from "./vendrService.js"
 let vendrService = new VendrService()
 
 //9
-function draw(itemImage) {
+function draw(itemImage, cashBack) {
   let v = vendrService.Balance
   document.getElementById('paidDisplay').innerText = v.toFixed(2)
   if (itemImage) {
     document.getElementById('dispensedCandy').setAttribute("src", itemImage)
+  }
+  if (v == 0) {
+    document.getElementById('paidDisplay').innerText = v.toFixed(2)
+    document.getElementById('dispensedCandy').setAttribute("src", "./assets/img/black-box.jpg")
   }
 }
 
@@ -30,6 +34,11 @@ export default class VendrController {
     if (itemImage) {
       draw(itemImage)
     }
+  }
+
+  cashOut() {
+    vendrService.cashOut()
+    draw()
   }
 
 }

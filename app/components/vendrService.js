@@ -26,4 +26,8 @@ export default class VendrService {
     }
   }
 
+  cashOut() {
+    _vendr.balance = 0
+  }
+
 }
